@@ -1,0 +1,32 @@
+{
+    "service": "my-service-name",
+
+    "gh_repo": {
+        "name": "vincarneiro-repo",
+        "owner": "Vinícius Carneiro",
+        "string": "vincarneiro-repo/cdk-pipeline",
+        "branch": "main",
+        "codestar_connection_arn": "arn:aws:codestar-connections:us-east-1:123456789012:connection/c19387bc-b0f4-4a5b-b196-3853170dc0a4"
+    },
+    
+    "environments": [
+        {
+            "name": "dev",
+            "region": "us-east-1",
+            "account_id": "123456789012",
+            "require_approval": false
+        },
+        {
+            "name": "uat",
+            "region": "us-east-1",
+            "account_id": "123456789012",
+            "require_approval": true
+        },
+        {
+            "name": "prod",
+            "region": "us-east-1",
+            "account_id": "123456789012",
+            "require_approval": true
+        }
+    ]
+}
