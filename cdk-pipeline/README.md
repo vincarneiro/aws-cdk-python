@@ -15,12 +15,10 @@ cdk-pipeline/
 │   └── deploy_stage.py           # Deployment stage configuration
 ├── tests/                        # Unit tests
 │   └── unit/                     # Unit tests directory
-├── .gitignore                    # Git ignore file
 ├── app.py                        # Main entry point for the CDK application
 ├── cdk.json                      # CDK configuration file
 ├── config.json                   # Configuration file (example)
-├── requirements.txt              # Production dependencies
-└── requirements-dev.txt          # Development dependencies
+└── requirements.txt              # List dependencies
 ```
 
 ## Description
@@ -96,7 +94,6 @@ Ensure config.json is properly configured with environment-specific details befo
 To install dependencies, run:
 ```
 pip install -r requirements.txt
-pip install -r requirements-dev.txt
 ```
 
 ### Usage
