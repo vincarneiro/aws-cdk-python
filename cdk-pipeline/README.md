@@ -31,16 +31,16 @@ This project implements a CDK pipeline to automate AWS infrastructure deployment
 #### app.py
 This file is the main entry point for the CDK application. It initializes the CDK app and deploys the CdkPipelineStack, which sets up the entire pipeline infrastructure.
 
-### custom_constructs/vpc.py
+#### custom_constructs/vpc.py
 This custom construct defines a Virtual Private Cloud (VPC) with public, private, and isolated subnets.
 
-### stacks/cdk_pipeline_stack.py
+#### stacks/cdk_pipeline_stack.py
 This file sets up a CodePipeline for continuous deployment using AWS CDK. It reads configurations from config.json to define pipeline stages for different environments.
 
-### stacks/s3_stack.py
+#### stacks/s3_stack.py
 This demonstrates an example resource stack to be deployed by the pipeline
 
-### Pipeline Stages
+#### Pipeline Stages
 Defined in stages/ folder, each file represents one stage and define the resorces and constructs to be deployed.
 
 # Using a Virtual Environment (.venv)
